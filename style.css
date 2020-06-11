@@ -1,0 +1,144 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+.unstyled {
+    font-size: 0;
+    list-style: none;
+}
+html{
+    background-color: grey;
+}
+
+.flex-container, .flex-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+  
+.flex-container > div {     //images
+    //width: 30%;
+    margin: 15px;
+    text-align: center;
+    text-align: center;
+}
+
+.flex-container2 > div {    //videos
+    width: 45%;
+    margin: 15px;
+    text-align: center;
+    text-align: center;
+}
+
+h1{
+    border:10px solid black;
+    text-align: center;
+	color:#d1d1d1;
+	background-color: #303440;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 25px;
+    font-size: 52px;
+    width: 500px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+	color:#d1d1d1;
+    margin-left: auto;
+    margin-right: auto;
+	//padding: 30px 30px;
+	font-size: 32px;
+    width: 40%;
+}
+
+
+img.empty{
+    transition: none;
+    box-shadow: none;
+    height: auto;
+    border-radius: 0;
+    border:none;
+}
+img.empty:hover{
+    transform: scale(1);
+}
+img.empty:active {
+    transform: scale(1);
+}
+img{
+    width : 500px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 15px 15px 10px#262626;
+}
+
+video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 15px 15px 10px#262626;
+}
+
+button {
+    background-color: #bababa;
+	border-radius: 20px;	
+	margin-left: 92%;
+	border: 4px solid black;
+	text-align: center;
+	cursor:pointer;
+}
+
+button:hover{
+  background-color: #2f8f55; 
+  color: #4edea2;
+}
+
+a.toplinks{
+    text-align:center;
+    color:black;
+    margin-left:40px;
+    margin-right:40px;
+    padding:5px;
+}
+a:hover.toplinks{ 
+    color:#4edea2;
+}
+
+.modal {
+    display: none;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    //opacity: .8;
+}
+
+.modal .modal-content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    //margin-top: -120px;
+    margin-left: -400px;
+    color: #fff;
+}
+
+.modal img, .modal span {
+    z-index: 10;
+}
+
+@media (max-width:900px){
+    h1{
+        width: 300px;
+    }
+}
