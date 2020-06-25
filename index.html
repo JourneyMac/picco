@@ -4,12 +4,13 @@
   <head>
 	<link rel="shortcut icon" href="dog.png" type="image/png">
 	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="simple-lightbox.min.css">
 	<title>dogs</title>
 
 	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 	<meta http-equiv="Pragma" content="no-cache" />
 	<meta http-equiv="Expires" content="0" />
-
+	 
   </head>
   
 
@@ -23,53 +24,69 @@
 
 	<div class="flex-container" id="myimages">
 
-		<div> <img src="images/1.jpg"></div>
-		<div> <img src="images/3.jpg"></div>
-		<div> <img src="images/33.jpg"></div>
+		<div> <a href="images/1.jpg" ><img src="images/1.jpg"> </a></div>
+		<div> <a href="images/3.jpg"><img src="images/3.jpg"> </a></div>
+		<div> <a href="images/33.jpg"><img src="images/33.jpg"> </a></div>
 
-		<div> <img src="images/4.jpg"></div>
-		<div> <img src="images/5.jpg"></div>
-		<div> <img src="images/6.jpg"></div>
+		<div> <a href="images/4.jpg"><img src="images/4.jpg"> </a></div>
+		<div> <a href="images/5.jpg"><img src="images/5.jpg"> </a></div>
+		<div> <a href="images/6.jpg"><img src="images/6.jpg"> </a></div>
 
-		<div>  <img src="images/7.jpg" ></div>
-		<div>  <img src="images/8.jpg" ></div>
-		<div>  <img src="images/32.jpg" ></div>
+		<div> <a href="images/7.jpg">  <img src="images/7.jpg"> </a></div>
+		<div> <a href="images/8.jpg"> <img src="images/8.jpg"> </a></div>
+		<div> <a href="images/32.jpg"> <img src="images/32.jpg"> </a></div>
 
-		<div>  <img src="images/37.jpg" ></div>
-		<div>  <img src="images/11.jpg" ></div>
-		<div>  <img src="images/12.jpg" ></div>
+		<div> <a href="images/37.jpg"><img src="images/37.jpg" > </a></div>
+		<div> <a href="images/11.jpg"><img src="images/11.jpg" > </a></div>
+		<div> <a href="images/12.jpg"> <img src="images/12.jpg" > </a></div>
 
-		<div>  <img src="images/13.jpg" ></div>
-		<div>  <img src="images/14.jpg" ></div>
+		<div>  <a href="images/13.jpg"> <img src="images/13.jpg" > </a></div>
+		<div>  <a href="images/14.jpg"> <img src="images/14.jpg" > </a></div>
 
-		<div>  <img src="images/16.jpg" ></div>
-		<div>  <img src="images/17.jpg" ></div>
+		<div>  <a href="images/16.jpg"><img src="images/16.jpg" > </a></div>
+		<div>  <a href="images/17.jpg"><img src="images/17.jpg" > </a></div>
 
-		<div>  <img src="images/19.jpg" ></div>
-		<div>  <img src="images/20.jpg" ></div>
-		<div>  <img src="images/36.jpg" ></div>
+		<div>  <a href="images/10.jpg"><img src="images/19.jpg" > </a></div>
+		<div>  <a href="images/20.jpg"><img src="images/20.jpg" > </a></div>
+		<div>  <a href="images/36.jpg"><img src="images/36.jpg" > </a></div>
 
-		<div>  <img src="images/31.jpg" ></div>
-		<div>  <img src="images/9.jpg" ></div>
-		<div>  <img src="images/2.jpg" ></div>
+		<div>  <a href="images/31.jpg"><img src="images/31.jpg" > </a> </div>
+		<div>  <a href="images/9.jpg"><img src="images/9.jpg" > </a> </div>
+		<div>  <a href="images/2.jpg"> <img src="images/2.jpg"> </a> </div>
 
-		<div>  <img src="images/38.jpg" ></div>
-		<div>  <img src="images/39.jpg" ></div>
-		<div>  <img src="images/30.jpg" ></div>
+		<div>  <a href="images/38.jpg"><img src="images/38.jpg" > </a></div>
+		<div>  <a href="images/39.jpg"><img src="images/39.jpg" > </a></div>
+		<div>  <a href="images/30.jpg"><img src="images/30.jpg" > </a></div>
 
-		<div>  <img src="images/10.jpg" ></div>
-		<div>  <img src="images/34.jpg" ></div>
-		<div>  <img src="images/35.jpg" ></div>
+		<div>  <a href="images/10.jpg"><img src="images/10.jpg" > </a></div>
+		<div>  <a href="images/34.jpg"><img src="images/34.jpg" > </a></div>
+		<div>  <a href="images/35.jpg"><img src="images/35.jpg" > </a></div>
+
+		<div>  <a href="images/40.jpg"><img src="images/40.jpg" > </a></div>
+		<div>  <a href="images/41.jpg"><img src="images/41.jpg" > </a></div>
+		<div>  <a href="images/43.jpg"><img src="images/43.jpg" > </a></div>
+
+		<div>  <a href="images/44.jpg"><img src="images/44.jpg" > </a></div>
+
+
 	</div>
 
 
-	<div class="modal"></div>
-
+	<!-- <div class="modal"></div> -->
 	
 	<br><br>
-	<button> <a href="#top"><img class="empty" src="arrow.png" height="100px" width="100px"> </img></a></button>
+	<button> <a href="#top"><img class="empty" src="arrow.png"> </img></a></button>
 	<br><br>
 
+
+	<script src="simple-lightbox.min.js"></script>
+	
+    <script> 
+        const lightbox = new SimpleLightbox('.flex-container a');
+	</script>
+	
 	</body>
+
+	
 	<!--<script src="main.js"></script> -->
 </html>
